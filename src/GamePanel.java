@@ -37,11 +37,11 @@ public class GamePanel extends JPanel implements ActionListener{
 	}
     //make a restart game method restart on space bar
     /*****************RESTART GAME*********************/
-    public void restartGame() {
+    /*public void restartGame() {
         running = false;
         timer.stop();
         startGame();
-    }
+    }*/
     /*****************PAINT COMPONENT*********************/
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
@@ -152,7 +152,6 @@ public class GamePanel extends JPanel implements ActionListener{
         g.setFont(new Font("Ink Free", Font.BOLD, 40));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Score: "+applesEaten, (SCREEN_WIDTH - metrics2.stringWidth("Score: "+applesEaten))/2, g.getFont().getSize());
-    
     }
     @Override
     /*********************ACTION PREFORMED*********************/
@@ -189,9 +188,9 @@ public class GamePanel extends JPanel implements ActionListener{
                         direction = 'D';
                     }
                 break;
-                case KeyEvent.VK_SPACE:
+                /*case KeyEvent.VK_SPACE:
                     restartGame();
-                break;
+                break;*/
             }
         } 
         
