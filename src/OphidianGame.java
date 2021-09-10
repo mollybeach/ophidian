@@ -1,6 +1,5 @@
-import javax.swing.JFrame;
 public class OphidianGame {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         new GameFrame();
     }
 }
